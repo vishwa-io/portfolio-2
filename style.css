@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:sans-serif;
+    overflow-x:hidden;
+}
+.hero{
+    width:100%;
+    min-height:100vh;
+    background:#cf2f3d;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    overflow:hidden;
+}
+.box{
+    position:relative;
+    width:1200px;
+    height:700px;
+    flex-shrink:0;
+}
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:10;
+}
+h1{
+    font-size:100px;
+    line-height:0.9;
+    color:#ffd6d6;
+    font-weight:900;
+    position:relative;
+    z-index:2;
+}
+.star{
+    position:absolute;
+    width:260px;
+    height:260px;
+    background:#7d2830;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    top:-80px;
+    left:20%;
+    transform:translateX(-50%);
+    z-index:1;
+}
+.role{
+    width:260px;
+    margin:30px auto 20px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:100px;
+    font-size:30px;
+    font-weight:bold;
+    color:#ffd6d6;
+}
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+.buttons button{
+    padding:12px 20px;
+    border-radius:999px;
+    border:2px solid black;
+    background:transparent;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+.deco{
+    position:absolute;
+}
+.deco1{
+    width:170px;
+
+    left:20px;
+    top:30px;
+}
+.deco2{
+    width:220px;
+
+    left:100px;
+    top:170px;
+}
+.deco3{
+    width:180px;
+
+    left:40px;
+    bottom:40px;
+}
+.deco4{
+    width:260px;
+
+    right:20px;
+    top:20px;
+}
+.deco5{
+    width:220px;
+
+    right:40px;
+    bottom:20px;
+}
+@media (max-width:1200px){
+    .box{
+        zoom:0.9;
+    }
+}
+
+@media (max-width:1000px){
+    .box{
+        zoom:0.75;
+    }
+}
+
+@media (max-width:800px){
+    .box{
+        zoom:0.6;
+    }
+}
+
+@media (max-width:600px){
+    .box{
+        zoom:0.45;
+    }
+}
+
+@media (max-width:500px){
+    .box{
+        zoom:0.38;
+    }
+}
+
+@media (max-width:400px){
+    .box{
+        zoom:0.3;
+    }
+}
+@media (max-width:300px){
+    .box{
+        zoom:0.2;
+    }
+}
+
+@media (max-width:200px){
+    .box{
+        zoom:0.15;
+    }
+}
+
+@media (max-width:150px){
+    .box{
+        zoom:0.1;
+    }
+}
